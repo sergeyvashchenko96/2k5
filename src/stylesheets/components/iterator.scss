@@ -1,0 +1,16 @@
+@import "../base/colors";
+.iterator{
+  width: 60.5px;
+  height: 60.5px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 20px;
+  border: 2px solid  $light-blue;
+}
+.iterator-active{
+  background: $light-blue;
+}

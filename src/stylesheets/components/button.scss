@@ -1,0 +1,27 @@
+@import "../base/typography";
+@import "../base/colors";
+
+.btn {
+  padding: 14px 20px;
+  border-width: 2px;
+  font-size: $main-font-size;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.btn-dark-blue {
+  color: $light-blue;
+  border-color: $light-blue;
+  margin-left: auto;
+}
+
+.btn-white-blue {
+  color: $white;
+  background: $light-blue;
+}
+
+.btn-blue {
+  border-color: $light-blue;
+  background: $white;
+  color: $light-blue;
+}

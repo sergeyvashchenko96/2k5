@@ -8,6 +8,13 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 
 {% block content %}
 <section class="page">
-
+  <div class="container">
+    {% include 'layouts/header.html' %}
+    <div class="main-section">
+      {% include 'layouts/video.html' %}
+      {% include 'layouts/payment.html' %}
+    </div>
+  </div>
+  {% include 'layouts/footer.html' %}
 </section>
 {% endblock %}

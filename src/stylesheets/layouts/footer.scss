@@ -1,0 +1,16 @@
+@import "../base/colors";
+
+footer {
+  height: 93px;
+  padding-top: 19px;
+  background: $white;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .or{
+   padding: 0 20px;
+  }
+}

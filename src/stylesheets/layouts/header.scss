@@ -1,0 +1,23 @@
+@import "../base/colors";
+@import "../base/typography";
+
+header {
+  padding-top: 70px;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .menu {
+    padding-left: 190px;
+    .menu__item {
+      font-size: $main-font-size;
+      letter-spacing: -0.2px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 2px 20px rgba(0, 0, 0, 0.08);
+      color: $white;
+      padding-right: 29px;
+    }
+    .menu__item-active {
+      font-weight: bold;
+    }
+  }
+}

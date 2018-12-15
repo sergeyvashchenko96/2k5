@@ -1,5 +1,25 @@
 @import "base/typography";
+@import "base/colors";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/payment";
+@import "components/button";
+@import "components/iterator";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&subset=cyrillic,cyrillic-ext,latin-ext');
 
-.example {
-  color: red;
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+  background: $dark-blue;
+  .container {
+    max-width: 1216px;
+    margin: 0 auto;
+    .main-section{
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
