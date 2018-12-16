@@ -22,10 +22,10 @@
       margin-top: 10px;
     }
   }
-  .collapsible-btn{
+  .collapsible-btn {
     padding-left: 12px;
   }
-  .collapsible-btn.active{
+  .collapsible-btn.active {
     transform: rotate(180deg);
     padding-left: 0;
     padding-right: 12px;
@@ -37,6 +37,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .collapsible-bar__points {
+    display: flex;
+    flex-direction: row;
+    color: $white;
+    font-size: $small-font-size;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .collapsible-bar__points {
+    .p:last-child {
+      opacity: 0.8;
+    }
+  }
   .line {
     width: 100%;
     background: rgba(130, 191, 240, 0.4);
@@ -48,7 +61,7 @@
       width: 50%;
       height: 8px;
       background-color: #506c89;
-      .active-line{
+      .active-line {
         width: 50%;
         height: 8px;
         background-color: $light-blue;
@@ -56,20 +69,21 @@
     }
   }
 }
-.documents{
+
+.documents {
   width: 100%;
   display: flex;
   flex-direction: row;
-  .document-stage{
+  .document-stage {
     max-width: 434px;
     width: 100%;
-    .documents-file{
+    .documents-file {
       display: flex;
       flex-direction: row;
       align-items: center;
-      .file{
+      .file {
         position: relative;
-        .file__number{
+        .file__number {
           opacity: 0.4;
           font-size: 25px;
           line-height: 0.88;
@@ -77,41 +91,41 @@
           color: #2f3645;
           position: absolute;
           left: 50%;
-          top:50%;
+          top: 50%;
           transform: translate(-50%, -50%);
           font-weight: bold;
           margin-top: 10px;
         }
       }
-      .documents-file-text{
+      .documents-file-text {
         color: $white;
         max-width: 250px;
         padding-left: 20px;
-        .documents-file-text__main{
+        .documents-file-text__main {
           font-size: $small-font-size;
         }
-        .documents-file-text__gray{
+        .documents-file-text__gray {
           opacity: 0.6;
           font-size: $small-font-size;
         }
       }
     }
   }
-  .documents-list{
+  .documents-list {
     line-height: 2.5;
     color: $white;
     list-style-type: none;
     padding-left: 10px;
   }
-  .documents-list > li{
+  .documents-list > li {
     font-size: $small-font-size;
     opacity: 0.6;
   }
-  .documents-list > .active{
+  .documents-list > .active {
     opacity: 1;
     position: relative;
   }
-  .documents-list > .active:before{
+  .documents-list > .active:before {
     width: 18px;
     height: 14px;
     content: '';
