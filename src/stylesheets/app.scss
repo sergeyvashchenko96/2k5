@@ -7,6 +7,7 @@
 @import "components/button";
 @import "components/iterator";
 @import "components/chips";
+@import "layouts/stage";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&subset=cyrillic,cyrillic-ext,latin-ext');
 
 body {
@@ -22,6 +23,7 @@ body {
     .main-section{
       display: flex;
       flex-direction: row;
+      padding-bottom: 70px;
     }
   }
 }

@@ -1,0 +1,103 @@
+@import '../base/colors';
+@import '../base/typography';
+
+.collapsible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .collapsible-text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $white;
+    .collapsible-text__number {
+      margin: 0 auto;
+      font-size: $main-font-size;
+    }
+    .collapsible-text__description {
+      font-size: 30px;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+  }
+  .collapsible-btn{
+    padding-right: 12px;
+  }
+  .collapsible-btn.active{
+    transform: rotate(180deg);
+  }
+}
+
+.collapsible-bar {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .line {
+    width: 100%;
+    background: rgba(130, 191, 240, 0.4);
+    height: 1px;
+    .gray-line {
+      width: 50%;
+      height: 8px;
+      background-color: #506c89;
+      .active-line{
+        width: 50%;
+        height: 8px;
+        background-color: $light-blue;
+      }
+    }
+  }
+}
+.documents{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .document-stage{
+    max-width: 434px;
+    width: 100%;
+    .documents-file{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .documents-file-text{
+        color: $white;
+        max-width: 250px;
+        padding-left: 20px;
+        .documents-file-text__main{
+          font-size: $small-font-size;
+        }
+        .documents-file-text__gray{
+          opacity: 0.6;
+          font-size: $small-font-size;
+        }
+      }
+    }
+  }
+  .documents-list{
+    line-height: 2;
+    color: $white;
+    list-style-type: none;
+    padding-left: 10px;
+  }
+  .documents-list > li{
+    font-size: $main-font-size;
+    opacity: 0.6;
+  }
+  .documents-list > .active{
+    opacity: 1;
+    position: relative;
+  }
+  .documents-list > .active:before{
+    width: 18px;
+    height: 14px;
+    content: '';
+    background: url("../../images/mark.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: -24px;
+    top: 15px;
+  }
+}
