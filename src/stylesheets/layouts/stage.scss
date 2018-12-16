@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 30px;
   .collapsible-text {
     width: 50%;
     display: flex;
@@ -22,10 +23,12 @@
     }
   }
   .collapsible-btn{
-    padding-right: 12px;
+    padding-left: 12px;
   }
   .collapsible-btn.active{
     transform: rotate(180deg);
+    padding-left: 0;
+    padding-right: 12px;
   }
 }
 
@@ -38,6 +41,9 @@
     width: 100%;
     background: rgba(130, 191, 240, 0.4);
     height: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     .gray-line {
       width: 50%;
       height: 8px;
@@ -61,6 +67,22 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      .file{
+        position: relative;
+        .file__number{
+          opacity: 0.4;
+          font-size: 25px;
+          line-height: 0.88;
+          letter-spacing: -0.1px;
+          color: #2f3645;
+          position: absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%, -50%);
+          font-weight: bold;
+          margin-top: 10px;
+        }
+      }
       .documents-file-text{
         color: $white;
         max-width: 250px;
@@ -76,13 +98,13 @@
     }
   }
   .documents-list{
-    line-height: 2;
+    line-height: 2.5;
     color: $white;
     list-style-type: none;
     padding-left: 10px;
   }
   .documents-list > li{
-    font-size: $main-font-size;
+    font-size: $small-font-size;
     opacity: 0.6;
   }
   .documents-list > .active{

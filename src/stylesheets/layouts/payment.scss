@@ -35,36 +35,43 @@
           margin: 0;
         }
       }
-      .payment-details-file {
-        display: flex;
-        flex-direction: row;
-        padding-top: 38px;
-        align-items: flex-start;
-        .payment-details-file-description {
-          padding-left: 30px;
-          .payment-details-file-description__text {
-            font-size: $small-font-size;
-            color: $white;
-            margin: 0;
-          }
-          .payment-details-file-description__date {
-            font-size: $small-font-size;
-            color: $white;
-            opacity: 0.6;
-            margin-top: 5px;
-          }
-        }
-        .payment-details-file__download {
-          margin-left: auto;
-          padding-left: 70px;
-        }
-      }
     }
   }
-  .payment-disable{
+  .payment-disable {
     align-items: center;
-    .payment-details{
+    .payment-details {
       opacity: 0.6;
     }
+  }
+}
+
+.payment-details-file {
+  display: flex;
+  flex-direction: row;
+  padding-top: 38px;
+  align-items: flex-start;
+  .payment-details-file-description {
+    padding-left: 30px;
+    .payment-details-file-description__text {
+      font-size: $small-font-size;
+      color: $white;
+      margin: 0;
+    }
+    .payment-details-file-description__text.black {
+      color: black;
+    }
+    .payment-details-file-description__date {
+      font-size: $small-font-size;
+      color: $white;
+      opacity: 0.6;
+      margin-top: 5px;
+    }
+    .payment-details-file-description__date.black{
+      color: black;
+    }
+  }
+  .payment-details-file__download {
+    margin-left: auto;
+    padding-left: 70px;
   }
 }

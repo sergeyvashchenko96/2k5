@@ -1,0 +1,23 @@
+@import "../base/variables";
+@import "../base/colors";
+
+.modal {
+  background: $white;
+  width: 514px;
+  height: 600px;
+  border-radius: $border-radius;
+  padding: 55px 60px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .modal-title {
+      max-width: 223px;
+      font-family: 'PT Sans Caption', sans-serif;
+      font-size: 30px;
+    }
+  }
+}
